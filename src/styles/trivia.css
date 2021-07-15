@@ -1,0 +1,150 @@
+.quiz_window {
+  background-color: azure;
+  width: 60%;
+  min-width: 550px;
+  max-width: 850px;
+  min-height: 350px;
+  margin: 30px auto;
+  border-left: 3px solid grey;
+  border-bottom: 6px solid grey;
+  border-radius: 15px;
+  box-shadow: 0 15px 12px -4px black;
+}
+
+/* Finnished Window */
+
+.quiz_window .finish {
+  height: 350px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.quiz_window .finish h3 {
+  margin-top: 30px;
+}
+
+.quiz_window .finish h3 span {
+  font-weight: 500;
+  color: gray;
+  font-style: italic;
+}
+
+.quiz_window .finish .btns {
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.quiz_window .finish .btns button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border: 2px solid black;
+  width: 40%;
+  margin-top: 30px;
+  padding: 7px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.quiz_window .finish .btns button:hover {
+  background-color: black;
+  color: azure;
+}
+
+/* //////////////////////////// */
+
+/* Quiz Window */
+
+.quiz_window .header {
+  padding: 10px;
+  background-color: black;
+  color: azure;
+  box-shadow: 0 10px 7px -4px black;
+  border-bottom: 2px solid azure;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.quiz_window .body {
+  padding: 20px;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.quiz_window .body h3 {
+  padding: 10px;
+}
+
+.quiz_window .body .answers {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.quiz_window .body .answers span {
+  background-color: white;
+  padding: 5px 0;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px grey;
+  cursor: pointer;
+}
+
+.quiz_window .body .answers .active {
+  background-color: black;
+  color: azure;
+  transition: all 0.3s ease-in;
+}
+
+.quiz_window .body .answers .disabled {
+  background-color: gainsboro;
+  color: gray;
+  transition: all 0.3s ease-in;
+  cursor: not-allowed;
+}
+
+.quiz_window .body button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border: 2px solid black;
+  width: 40%;
+  margin-top: 30px;
+  padding: 7px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.quiz_window .body button:hover {
+  background-color: black;
+  color: azure;
+}
+
+.quiz_window .body .disabled_btn {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border: 2px solid gainsboro;
+  width: 40%;
+  color: gainsboro;
+  margin-top: 30px;
+  border-radius: 15px;
+  cursor: not-allowed;
+  transition: all 0.3s ease-in-out;
+}
+
+.quiz_window .body .disabled_btn:hover {
+  background-color: transparent;
+  border: 2px solid gainsboro;
+  color: gainsboro;
+}
